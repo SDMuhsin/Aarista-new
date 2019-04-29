@@ -1,9 +1,11 @@
   <!DOCTYPE html>
   <html>
     <head>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	
       <script src="jqery.min.js"></script>
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="materialize.min.css"  media="screen,projection"/>
 
@@ -14,7 +16,21 @@
     </head>
 
     <body>
+	
+	
 <div style = "overflow-x:hidden">
+
+
+	<div id = "loading_parent"class = "black" style = "width:100vw;height:100vh;position:fixed;z-index:5000000;left:0;top:0">
+		
+		<div class = "animate-this-box">
+			<span style = "background:white"></span>	
+			<span style = "background:white"></span>	
+			<span style = "background:white"></span>	
+			<span style = "background:white"></span>	
+		</div>
+
+	</div>
 	<section id = "navigation">
 	
 	  <nav class = "grey darken-4">
@@ -22,54 +38,61 @@
 		  <a href="#!" class="brand-logo"><img src = "logotext.png" style = "height:50px;width:200px;margin-top;transform:translate(10%,10%)"></a>
 		  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 		  <ul class="right hide-on-med-and-down">
-			<li><a href="#vision">About Us</a></li>
+			<li><a href="#about">The product</a></li>
 			<li><a href="#features">Features</a></li>
-			<li><a href="#gallery">How it works</a></li>
+			<li><a href="#tellus">Rate</a></li>
 			<li><a href="#team">Our Team</a></li>
-			<li><a href="#team">Contact Us</a></li>
+			<li><a href="#footer">Contact Us</a></li>
 		  </ul>
 		</div>
 	  </nav>
 
 	  <ul class="sidenav" id="mobile-demo">
-			<li><a href="#vision">About Us</a></li>
+			<li><a href="#about">The product</a></li>
 			<li><a href="#features">Features</a></li>
-			<li><a href="#gallery">How it works</a></li>
+			<li><a href="#tellus">Rate</a></li>
 			<li><a href="#team">Our Team</a></li>
-			<li><a href="#team">Contact Us</a></li>
+			<li><a href="#footer">Contact Us</a></li>
 	  </ul>
 	
 	</section>
-<section id = "banner" style = "background-image:url('bg-0.png')">
-	<div class = "container" >
+<section id = "banner" style = "" class = "position-relative ">
+	<div class = "container  d-flex-center" >
 	<div class = "row" style = "margin:0">
 		<div class = "col s12 m6 d-flex-center" style = "padding-top:25px;padding-bottom:25px">
 			<img src = "aarista.png" style = "max-width:80%">
 		</div>
-		<div class = "col l s12 m6 valign-wrapper" style = "height:100%">
+		<div class = "col l s12 m6 valign-wrapper d-flex-center-c" style = "height:500px" >
 		<!-- quote slider -->
 			
 			
-				<q id = "q1" style = "padding:50px;padding-top:30%;font-size:1.7rem" class = "">Aarista leverages the power artificial intelligence and cloud computing to bring to the user a slick smart doorlock that learns over time</q>				<q id = "q2" style = "padding:50px;padding-top:30%;font-size:1.7rem" class = "vanish">Aarista leverages the power artificial intelligence ddddddddddd and cloud computing to bring to the user a slick smart doorlock that learns over time</q>				<q id = "q3" style = "padding:50px;padding-top:30%;font-size:1.7rem" class = "vanish">Aarista leverages the power artificial intelligence and cloud computing to bring to the user a slick smart rrrrrr 	doorlock that learns over time</q>
+				<q id = "q1" style = "font-size:1.7rem;padding-left:25px;padding-right:25px" class = "white-text p-2 py-75 l z-depth-2"> Tired of losing your keys? With the Aarista doorlock's virtual key feature, predicaments of forgetfulness are a thing of the past!</q>				
+				
+				<q id = "q2" style = "font-family: 'Lato', sans-serif;font-size:1.7rem;padding-left:25px;padding-right:25px" class = "p-2 py-75 white-text z-depth-2 vanish">
+					Packed up for a vacation? Leave your home in safe hands as the aarista doorlock can be accessed and monitored from all around the world!
+				</q>				
+				<q id = "q3" style = "font-size:1.7rem;padding-left:25px;padding-right:25px" class = "white-text p-2 py-75  z-depth-2 vanish">
+					Too tired to answer the door? The Aarista doorlock lets you open the door from the comfort of your room!
+				</q>
 			
 			
 		</div>
 	</div>
 	</div>
 </section>
-<section id = "vision">
+<section id = "vision" class = "bg-gradient-animated">
 	
 		<div style = "min-width:100vw" class = "container" style = "">
 			<div class = "row " style = "margin:0">
-				<div class = " col s12 m6 " style = "height:60vh;background-image:url('bg-1.png');padding:0" >
+				<div class = " col s12 m6 " style = "height:60vh;padding:0" >
 					<div class = "d-flex-center white-text stretch-perc flip-card stretch-perc" style = "min-height:60vh;width:100%;position:relative">
 						
-						<div class = "flip-card-top grey darken-4 z-depth-4 d-flex-center-c stretch-perc position-absolute">
-							<div class = "d-flex-center"><i style ="color:white;font-size:200px" class="fab fa-wpexplorer"></i></div>
-							<h2>OUR VISION</h2>
+						<div class = "flip-card-top z-depth-4 d-flex-center-c stretch-perc position-absolute" style = "background:#f76c6c">
+							<div class = "d-flex-center"><i style ="color:white;font-size:100px" class="fab fa-wpexplorer"></i></div>
+							<h3>OUR VISION</h3>
 						</div>
-						<div class = "grey lighten-5 l lighten-4 black-text z-depth-4 flip-card-bottom stretch-perc position-absolute">
-							<div class = "d-flex-center" style = "height:100%"><p style = "padding:25px;padding-left:30px;padding-right:30px;font-size:2rem">"Aarista envisions an enhanced standard of living for it's customers, brought forth through technology forged with ardor and tailored to the user's convenience"</p>
+						<div class = " l  black-text z-depth-4 flip-card-bottom stretch-perc position-absolute" style = "background:#f76c6c">
+							<div class = "d-flex-center" style = "height:100%"><p class = "white-text" style = "padding:25px;padding-left:30px;padding-right:30px;font-size:1.6rem">"Aarista envisions an enhanced standard of living for it's customers, brought forth through technology forged with ardor and tailored to the user's convenience"</p>
 							</div>
 						</div>
 						
@@ -81,12 +104,12 @@
 				<div class = " col s12 m6 " style = "height:60vh;background-image:url('bg-1.png');padding:0" >
 					<div class = "d-flex-center white-text stretch-perc flip-card stretch-perc" style = "height:60vh;width:100%;position:relative">
 						
-						<div class = "flip-card-top black z-depth-4 d-flex-center-c stretch-perc position-absolute">
-							<div class = "d-flex-center"><i style = "font-size:200px"class="fas fa-scroll"></i></div>
-							<h2>OUR MOTTO</h2>
+						<div class = "flip-card-top deep-purple darken-4 z-depth-4 d-flex-center-c stretch-perc position-absolute">
+							<div class = "d-flex-center"><i style = "font-size:100px"class="fas fa-scroll"></i></div>
+							<h3>OUR MOTTO</h3>
 						</div>
-						<div class = "white black-text z-depth-4 flip-card-bottom stretch-perc position-absolute">
-							<div class = "d-flex-center l" style = "height:100%"><p style = "padding:25px;padding-left:30px;padding-right:30px;font-size:2rem">"To Secure and connect and families, one doorlock at a time"</p>
+						<div class = "deep-purple darken-4 white black-text z-depth-4 flip-card-bottom stretch-perc position-absolute">
+							<div class = "d-flex-center l" style = "height:100%"><p class = "white-text"style = "padding:25px;padding-left:30px;padding-right:30px;font-size:1.6rem">"To Secure and connect and families, one doorlock at a time"</p>
 							</div>
 						</div>
 						
@@ -98,27 +121,51 @@
 			</div>
 		</div>
 </section>
-	<section id = "parallax" style = "position:relative">
-	
-    <div class="parallax-container">
-      <div class="parallax"><img src="https://picsum.photos/id/377/1800/1600"></div>
-	  
-    </div>	
 
+	<section id = "about" class = "bg-gradient-animated-blue">
+
+		<h1 style = "text-align:center;font-family:KG" class = "py-75 white-text m-0 py-4"> Our Product </h1>
+		<div class = "position-relative " style = "width:100vw;height:600px">
+		
+		
+			<div class = "center-abs circle-bg cbg-1" ></div>
+			<div class = "center-abs circle-bg cbg-2" ></div>
+			<div class = "center-abs circle-bg cbg-3" ></div>
+			<div class = "center-abs circle-bg cbg-4" ></div>
+			<div class = "center-abs circle-bg cbg-5" ></div>
+			
+			<div class = "center-abs black flish"  style = "width:100px;height:100px;border-radius:50%" ></div>
+			
+			
+			<img class = "scaled-out center-abs logo-btn"  src = "aarista.png" style = "height:75px">
+			
+			<div class ="stretch-perc scale-in" id = "about_text">
+			<div class = "stretch-perc d-flex-center ">
+				<div class = "bg-white z-depth-4 d-flex-center-c"style = "padding-top:50px;z-index:5000;width:60vw;min-height:400px">
+					<i style = "font-size:4rem"class="fas fa-lock"></i>
+					<p style = "text-align:center;padding:50px;padding-top:5px;font-size:1.4rem">The Aarista doorlock leverages the power of Artificial Intelligence and cloud computing to bring to the user a slick, smart door lock that offers robust security with delightful convenience</p>
+				</div>
+			</div>
+			</div>
+			
+		</div>
+		<div style= "height:75px"></div>
 	</section>
 	
-	<section id = "features" style = "background-image:url('bg-2.png');position:relative">
-		<div style ="position:relative">
-			<img src = "2-bar-dash.png" style = "height:200px;width:100%;margin-top:-148px">
-		</div>
-		<div class "container">
-			<h1 style = "text-align:center;font-family:KG" class = "white-text"> Our Product </h1>
-			<div class = "row m-0">
+	
+	<section id = "features" style = "padding-bottom:50px" class  = "bg-gradient-animated-red ">
+	
+		
+		<h1 style = "text-align:center;font-family:KG" class = "py-75 white-text m-0 py-4"> Features </h1>
+		
+		<div class "container ">
+			
+			<div class = "row m-0  ">
 				
-				<div class = "col s12 m5 d-flex-center-c" style = "height:100%">
+				<div class = "col s12 m5 d-flex-center-c " style = "height:475px" style = "position:relative">
 					
 					
-					<iframe id= "video_height_auto" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style = "width:95%;height:450px"type="text/html" src="https://www.youtube.com/embed/E2FpffNGxB4?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"><div><small><a href="https://youtubeembedcode.com/nl/">youtubeembedcode.com/nl/</a></small></div><div><small><a href="http://add-link-exchange.com">add link exchange</a></small></div><div><small><a href="https://youtubeembedcode.com/en">youtubeembedcode en</a></small></div><div><small><a href="http://add-link-exchange.com">ww://add-link-exchange.com</a></small></div></iframe>
+					<iframe id= "video_height_auto" data-aos = "fade-right" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style = "width:95%;height:250px"type="text/html" src="https://www.youtube.com/embed/E2FpffNGxB4?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"><div><small><a href="https://youtubeembedcode.com/nl/">youtubeembedcode.com/nl/</a></small></div><div><small><a href="http://add-link-exchange.com">add link exchange</a></small></div><div><small><a href="https://youtubeembedcode.com/en">youtubeembedcode en</a></small></div><div><small><a href="http://add-link-exchange.com">ww://add-link-exchange.com</a></small></div></iframe>
 					
 				
 				</div>
@@ -128,73 +175,73 @@
 					
 						<div class = "row">
 							<div class = "col s12 m2 d-flex-center feature-button">
-								<a class="btn-floating btn-large waves-effect waves-light red">
+								<a  data-aos-once = "true" data-aos = "zoom-out-left" class="btn-floating btn-large waves-effect waves-light red">
 									<i class="fas fa-key"></i>
 								 </a>
 							</div>
 							
 							<div class = "  col s12 m10 feature-text ">
-										<div style = "height:50px" class = "l brdr-smooth z-depth-3 amber lighten-5 " style = "">The aarista doorlock can be unlocked via a virutal key stored within the user;s mobile devices.</div>
+										<div style = "min-height:50px" class = "l p-2 z-depth-3 white " style = "">The aarista doorlock can be unlocked via a virutal key stored within the user's mobile devices.</div>
 							</div>
 						</div>
 											
 						<div class = "row">
 							<div class = "col s12 m2 d-flex-center feature-button">
-								<a class="btn-floating btn-large waves-effect waves-light red">
+								<a data-aos-once = "true" data-aos = "zoom-out-left" class="btn-floating btn-large waves-effect waves-light red">
 									<i class="fas fa-eye"></i>
 								 </a>
 							</div>
 							
 							<div class = "  col s12 m10 feature-text ">
-										<div style = "height:50px" class = "l brdr-smooth z-depth-3 amber lighten-5 " style = "">The aarista doorlock is programmed with AI that passively recognizes and differentiates between users and unwelcome characters.</div>
+										<div style = "min-height:50px" class = "l p-2 z-depth-3 white" style = "">The aarista doorlock is programmed with AI that passively recognizes and differentiates between users and unwelcome characters.</div>
 							</div>
 						</div>
 											
 						<div class = "row">
 							<div class = "col s12 m2 d-flex-center feature-button">
-								<a class="btn-floating btn-large waves-effect waves-light red">
+								<a data-aos = "zoom-out-left" data-aos-once = "true" class="btn-floating btn-large waves-effect waves-light red">
 									<i class="fas fa-chart-line"></i>
 								 </a>
 							</div>
 							
 							<div class = "  col s12 m10 feature-text ">
-										<div style = "height:50px" class = "l brdr-smooth z-depth-3 amber lighten-5 " style = "">Equiped with the latest in machine learning, the aarista doorlock can anylize the user's behavior and make subtle changes to enhance the user's comfort and convenience</div>
+										<div style = "min-height:50px" class = "l p-2 white z-depth-3  " style = "">Equiped with the latest in machine learning, the aarista doorlock can anylize the user's behavior and make subtle changes to enhance the user's comfort and convenience</div>
 							</div>
 						</div>
 											
 						<div class = "row">
 							<div class = "col s12 m2 d-flex-center feature-button">
-								<a class="btn-floating btn-large waves-effect waves-light red">
+								<a data-aos = "zoom-out-left" data-aos-once = "true" class="btn-floating btn-large waves-effect waves-light red">
 									<i class="fas fa-cloud"></i>
 								 </a>
 							</div>
 							
 							<div class = "  col s12 m10 feature-text ">
-										<div style = "height:50px" class = "l brdr-smooth z-depth-3 amber lighten-5 " style = "">The aarista doorlock is fully cloud integrated, ensuring protection against data fraud </div>
+										<div style = "min-height:50px" class = "l p-2 white z-depth-3 ">The aarista doorlock is fully cloud integrated, ensuring protection against data fraud </div>
 							</div>
 						</div>
 											
 						<div class = "row">
 							<div class = "col s12 m2 d-flex-center feature-button">
-								<a class="btn-floating btn-large waves-effect waves-light red">
+								<a data-aos = "zoom-out-left" data-aos-once = "true" class="btn-floating btn-large waves-effect waves-light red">
 									<i class="fas fa-wrench"></i>
 								 </a>
 							</div>
 							
 							<div class = "  col s12 m10 feature-text ">
-										<div style = "height:50px" class = "l brdr-smooth z-depth-3 amber lighten-5 " style = "">The aarista doorlock is designed to be easily setup within a short span of time.</div>
+										<div style = "min-height:50px" class = "l white p-2 z-depth-3" >The aarista doorlock is designed to be easily setup within a short span of time.</div>
 							</div>
 						</div>
 											
 						<div class = "row">
 							<div class = "col s12 m2 d-flex-center feature-button">
-								<a class="btn-floating btn-large waves-effect waves-light red">
+								<a data-aos = "zoom-out-left" data-aos-once = "true" class="btn-floating btn-large waves-effect waves-light red">
 									<i class="fas fa-mobile"></i>></i>
 								 </a>
 							</div>
 							
 							<div class = "  col s12 m10 feature-text ">
-										<div style = "height:50px" class = "l brdr-smooth z-depth-3 amber lighten-5 " style = "">Our apps are fully crossplatform compatible, allowing users to access the doorlock through any and all devices</div>
+										<div style = "min-height:50px" class = "l white p-2 z-depth-3 " >Our apps are fully crossplatform compatible, allowing users to access the doorlock through any and all devices</div>
 							</div>
 						</div>
 						
@@ -206,24 +253,14 @@
 		</div>
 		
 	</section>
-	
-	<section id = "parallax2" style = "position:relative">
-	
-    <div class="parallax-container">
-      <div class="parallax"><img src="https://picsum.photos/id/377/1800/1600"></div>
-	  
-    </div>	
 
-	</section>	
 
 	
-	<section id = "features" style = "background-image:url('bg-0.png');position:relative">
-		<div style ="position:relative">
-			<img src = "3-bar-dash.png" style = "height:200px;width:100%;margin-top:-148px">
-		</div>
+	<section id = "tellus" style = "position:relative" class = "py-75 bg-gradient-animated-white">
+
 		
-		<div class "container" style = "padding-bottom:25px">
-			<h1 style = "text-align:center;font-family:KG" class = "black-text"> Tell Us What you think </h1>
+		<div class "container m-0 " data-aos = "face-up" style = "padding-bottom:25px">
+			<h1 style = "text-align:center;font-family:KG;margin-bottom:20px" class = "p-2 black-text m-0"> Tell Us What you think </h1>
 			<div class = "  z-depth-4 row m-0" style = "padding:25px;margin-left:10px;margin-right:10px">
 			
 				<div style = "height:450px;justify-content:space-between" class = "col s12 m4 d-flex-center-c">
@@ -236,12 +273,7 @@
 				</div>
 				
 				<div class = "col s12 m8 position-relative">
-				
-					<!--<div class = "position-absolute green" style = "height:270px;width:100%;overflow-y:hidden;" >
-						<video style = "width:100%" class = "">
-							<source src="black.mp4" type="video/mp4">
-						</video>
-					</div> -->
+
 				
 					<div class = " d-flex-center" style = "height:450px">
 					
@@ -615,11 +647,17 @@
 </div>
 
 	</section>
+	<section id = "parallax" style = "position:relative">
 	
+    <div class="parallax-container" style = "height:800px">
+      <div class="parallax"><img src="https://picsum.photos/id/377/1800/1600"></div>
+	  
+    </div>	
+	</section>
 	
 	<section id  = "team" style = "background-image:url('bg-team.png')">
-		<div class="carousel">
-		<div class="carousel-item ">
+		<div class="carousel" >
+		<div class="carousel-item " >
 		  <div class="usr-crd card zoh brdr-smooth">
 			<div class="orange darken-4 card-image">
 				<div class = "container d-flex-center" style = "height:175px">
@@ -815,16 +853,14 @@
           <div class="container">
             <div class="row">
 				
-			  <div class = "col s12 m4">
+			  <div class = "col s12 m4" >
 				<h5>Contact Us</h5>
-				<div class = "grey-text text-lighten-4">Deepansh Signh +91 90542312</div>
-				<div class = "grey-text text-lighten-4">Deepansh Signh +91 90542312</div>
-				<div class = "grey-text text-lighten-4">Deepansh Signh +91 90542312</div>
-				<div class = "grey-text text-lighten-4">Deepansh Signh +91 90542312</div>
+				<div class = "grey-text text-lighten-4">Deepansh Signh 7902981635</div>
+				<div class = "grey-text text-lighten-4">Deepansh.singh98@gmail.com</div>
 			  </div>
 			  <div class = "col s12 m4 ">
 				<h5>Address</h5>
-				<div class = "grey-text text-lighten-4">Nit Calicut Campus<br>PO 4545234<br>Calicut<br>Kerala</div>
+				<div class = "grey-text text-lighten-4">Nit Calicut Campus<br>PO 673601<br>Calicut<br>Kerala</div>
 			  </div>
 			  <div class = "col s12 m4">
 			    <div style = "height:25px"></div>
@@ -848,5 +884,10 @@
       <script type="text/javascript" src="materialize.min.js"></script>
       
       <script type="text/javascript" src="main.js"></script>
+	  
+	  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	  <script>
+		  AOS.init();
+		</script>
     </body>
   </html>

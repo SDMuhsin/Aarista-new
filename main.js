@@ -4,9 +4,15 @@ var options = {};
 	$('.carousel').carousel();
 	$('.modal').modal();
 	 $('.parallax').parallax();
+	setTimeout(function(){$('#loading_parent').remove();console.log("work already")},6000);
 
   });
-
+$(".logo-btn").click(function(){
+	$("#about_text").addClass("scale-out");
+});
+$("#about_text").click(function(){
+	$("#about_text").removeClass("scale-out");
+});
 var videos = ["video1","video2","video3","video4","video5","video6"];
 var current = 0;
 $(".f-btn").click(function(){

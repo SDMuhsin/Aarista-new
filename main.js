@@ -4,7 +4,7 @@ var options = {};
 	$('.carousel').carousel();
 	$('.modal').modal();
 	 $('.parallax').parallax();
-	setTimeout(function(){$('#loading_parent').remove();console.log("work already")},6000);
+	setTimeout(function(){$('#loading_parent').remove();console.log("work already")},10);
 
   });
 $(".logo-btn").click(function(){
@@ -57,5 +57,5 @@ setInterval(function(){
 		}else{
 			currentQuote+=1;
 		}
-	},4000);
+	},6000);
 

@@ -4,7 +4,7 @@ var options = {};
 	$('.carousel').carousel();
 	$('.modal').modal();
 	 $('.parallax').parallax();
-	setTimeout(function(){$('#loading_parent').remove();console.log("work already")},10);
+	setTimeout(function(){$('#loading_parent').remove();console.log("work already")},5000);
 
   });
 $(".logo-btn").click(function(){

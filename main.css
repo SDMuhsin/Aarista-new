@@ -1,3 +1,79 @@
+
+
+/*LOADING*/
+.full-spread{
+	top:0;
+	bottom:0;
+	position:fixed;
+	z-index:50000;	
+	width:100vw;
+	height:100vh;
+	background:var(--prim-red);
+	
+}
+
+.animate-this-box{
+	position:absolute;
+	width:100px;
+	height:100px;
+	
+
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%) rotate(45deg);
+	animation: expand 1s linear infinite;
+}
+
+.animate-this-box span{
+	position:absolute;
+	background:var(--prim-white);
+	width:50px;
+	height:50px;
+	animation: spin 1s linear infinite;
+}
+.animate-this-box span:nth-child(1){
+	left:0;
+	top:0;
+
+
+}
+.animate-this-box span:nth-child(2){
+	right:0;
+	top:0;
+
+}
+.animate-this-box span:nth-child(3){
+	left:0;
+	bottom:0;
+
+}
+.animate-this-box span:nth-child(4){
+	right:0;
+	bottom:0;
+
+}
+
+@keyframes expand{
+	
+	0%{height:100px;
+	   width:100px;}
+
+	50%{height:150px;
+	   width:150px;}
+	   
+	100%{height:100px;
+width:100px;}}
+
+@keyframes spin{
+	
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(90deg)}
+
+
+}
+
+
+
 :root{
 	--blackish:#151617;
 }html {
@@ -7,6 +83,8 @@
 }.whatever:hover{
 	transform:scale(1.05);
 	
+}.h-100{
+	height:100%;
 }
 .bg-blackish{
 	background:var(--blackish);
@@ -22,6 +100,8 @@
 	margin:0;
 }.p-0{
 	padding:0;
+}.pr-75{
+	padding-right:125px;
 }.w-100{
 	width:100%
 }.h-min-200{
@@ -127,6 +207,9 @@
 	justify-content:center;
 	align-items:center;
 	flex-direction:column;
+}.d-flex-space-around{
+	justify-content:space-around;
+	
 }.d-flex-start{
 	display:flex;
 
@@ -162,6 +245,8 @@
 	}
 .media-height-500-1000{
 	height:500px;
+}.media-align-items-center{
+	align-items:start;
 }
 @media only screen and (max-width: 1000px) {
 
@@ -195,6 +280,17 @@
 	
 	.media-vw-about-text{
 		width:95vw;
+	}
+	
+	.media-center-text{
+		text-align:center;
+	}.media-p-0{
+		padding:0;
+	}.media-mx-auto{
+		margin-left:auto;
+		margin-right:auto;
+	}.media-align-items-center{
+		align-items:center;
 	}
 }	
 
@@ -244,7 +340,7 @@
 	-moz-animation: Gradient 15s ease infinite;
 	animation: Gradient 15s ease infinite;
 }.bg-gradient-animated{
-		background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+		background: linear-gradient(-45deg, #36D1DC, #5B86E5);
 	background-size: 400% 400%;
 	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;

@@ -1,6 +1,7 @@
 
 
 /*LOADING*/
+
 .full-spread{
 	top:0;
 	bottom:0;
@@ -85,6 +86,8 @@ width:100px;}}
 	
 }.h-100{
 	height:100%;
+}.h-85{
+	height:85%;
 }
 .bg-blackish{
 	background:var(--blackish);
@@ -104,10 +107,16 @@ width:100px;}}
 	padding-right:125px;
 }.w-100{
 	width:100%
+}.w-95{
+	width:95%;
+}.h-95{
+	height:95%;
 }.h-min-200{
 	min-height:200px
 }.position-relative{
 	position:relative;
+}.position-absolute{
+	position:absolute;
 }.f-robot{
 	font-family: 'Roboto', sans-serif;
 }.f-mont{
@@ -260,7 +269,16 @@ width:100px;}}
 		height:700px
 	}
 }	
+.media-h-900{
+	height:450px;
+}
 @media only screen and (max-width: 576px) {
+	.media-h-450{
+		height:450px;
+	}
+	.media-h-900{
+		height:900px;
+	}
 	q{
 		padding-top:0;
 	}.media-height-500-100{
@@ -294,7 +312,29 @@ width:100px;}}
 	}
 }	
 
+/* blobs */
 
+.bleeb-1{
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	width:75%;
+	height:75%;
+	border-radius: 70% 60% 80% 40% ;
+}
+
+/* UI mobile thing */
+.mob-parent{
+	width:225px;
+	height:375px;
+	border-radius:5%;
+}
+.mob-screen{
+	left:50%;
+	top:50%;
+	transform:translate( -50%, -55%);
+	border-radius:inherit;
+}
 /* flip cards */
 .flip-card-top,.flip-card-bottom{
 	transition:1s linear;
@@ -467,74 +507,3 @@ animation-delay:4s;}
 }
 
 
-/*LOADING*/
-.full-spread{
-	top:0;
-	bottom:0;
-	position:fixed;
-	z-index:50000;	
-	width:100vw;
-	height:100vh;
-	background:var(--prim-red);
-	
-}
-
-.animate-this-box{
-	position:absolute;
-	width:100px;
-	height:100px;
-	
-
-	left:50%;
-	top:50%;
-	transform:translate(-50%,-50%) rotate(45deg);
-	animation: expand 1s linear infinite;
-}
-
-.animate-this-box span{
-	position:absolute;
-	background:var(--prim-white);
-	width:50px;
-	height:50px;
-	animation: spin 1s linear infinite;
-}
-.animate-this-box span:nth-child(1){
-	left:0;
-	top:0;
-
-
-}
-.animate-this-box span:nth-child(2){
-	right:0;
-	top:0;
-
-}
-.animate-this-box span:nth-child(3){
-	left:0;
-	bottom:0;
-
-}
-.animate-this-box span:nth-child(4){
-	right:0;
-	bottom:0;
-
-}
-
-@keyframes expand{
-	
-	0%{height:100px;
-	   width:100px;}
-
-	50%{height:150px;
-	   width:150px;}
-	   
-	100%{height:100px;
-width:100px;}}
-
-@keyframes spin{
-	
-	0%{transform: rotate(0deg);}
-	100%{transform: rotate(90deg)}
-
-
-}
